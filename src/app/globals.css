@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --background: #171717;
+  --font-primary: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  background: var(--background);
+  min-height: 100vh;
+  overflow-y: auto;
+
+  /* Text */
+  font-family: Inter;
+  color: var(--font-primary);
+}
+
+.logo {
+  transition: transform 0.4s ease-in-out;
+}
+
+.logo:hover {
+  transform: rotate(180deg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--background);
+  }
+}
