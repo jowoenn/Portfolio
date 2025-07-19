@@ -81,6 +81,14 @@ export default function Header() {
                     </Link>
                     <Link 
                         className={`relative transition-colors duration-200 rounded-lg px-4 py-3
+                            ${isActive('/pages/project') ? "text-white" : "text-gray-400 hover:text-white"}`} 
+                        href="/pages/project"
+                        aria-current={isActive('/pages/project') ? "page" : undefined}
+                    >
+                        Project
+                    </Link>
+                    <Link 
+                        className={`relative transition-colors duration-200 rounded-lg px-4 py-3
                             ${isActive('/pages/gear') ? "text-white" : "text-gray-400 hover:text-white"}`} 
                         href="/pages/gear"
                         aria-current={isActive('/pages/gear') ? "page" : undefined}

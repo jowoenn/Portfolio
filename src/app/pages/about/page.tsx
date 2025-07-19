@@ -63,17 +63,17 @@ export default function Page() {
     <div className="flex flex-col w-full max-w-xl mx-auto px-2">
       <div>
         <h1 className="text-2xl font-bold">About</h1>
-        <h2>get to know me.</h2>
+        <h2>get to know me</h2>
       </div>
 
-      <div className="mt-10 mb-5 w-full flex justify-center">
+      <div className="mb-5 w-full flex justify-center">
         <ImageCarousel
           images={[
-            { src: "/drawable/lenovo.png", alt: "" },
-            { src: "/drawable/lenovo.png", alt: "" },
-            { src: "/drawable/lenovo.png", alt: "" },
-            { src: "/drawable/lenovo.png", alt: "" },
-            { src: "/drawable/lenovo.png", alt: "" },
+            { src: "/drawable/jowoen.jpg", alt: "" },
+            { src: "/drawable/lari.jpeg", alt: "" },
+            { src: "/drawable/sybau.png", alt: "" },
+            { src: "/drawable/olisykes.jpeg", alt: "" },
+            { src: "/drawable/botak.jpeg", alt: "" },
           ]}
           width={300}
           height={400}
