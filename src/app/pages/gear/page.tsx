@@ -30,7 +30,7 @@ const deskSetup = [
     name: "Oxihome FM7217",
     description: "Ergonomic Office Chair",
     image: "/drawable/oxihom.png",
-    link: "https://tk.tokopedia.com/ZSB92FsWw/",
+    link: "https://tk.tokopedia.com/ZSS1f3et1/",
   },
   {
     name: "RK 68 Blue Switch Keyboard",

@@ -47,7 +47,6 @@ export default function Header() {
                 <h1 className="logo cursor-pointer" onClick={() => router.push("/")}>
                     <img src="/drawable/triangleLogo.png" alt="logo" className="w-10 h-10" />
                 </h1>
-                {/* Hamburger for mobile */}
                 {!mobileMenuOpen && (
                   <button
                     className="md:hidden ml-auto text-white focus:outline-none z-30"
@@ -57,7 +56,6 @@ export default function Header() {
                     <HiMenu size={32} />
                   </button>
                 )}
-                {/* Desktop nav */}
                 <nav className="relative md:flex hidden items-center space-x-4">
                     <div 
                         className="absolute h-full bg-[#333333] rounded-lg transition-all duration-300 ease-in-out"
@@ -128,6 +126,7 @@ export default function Header() {
                     </button>
                     <Link onClick={() => setMobileMenuOpen(false)} className={`text-lg font-bold mb-4 mt-2 ${isActive('/') ? "text-white" : "text-gray-400 hover:text-white"}`} href="/" aria-current={isActive('/') ? "page" : undefined}>Home</Link>
                     <Link onClick={() => setMobileMenuOpen(false)} className={`text-lg font-bold mb-4 ${isActive('/pages/about') ? "text-white" : "text-gray-400 hover:text-white"}`} href="/pages/about" aria-current={isActive('/pages/about') ? "page" : undefined}>About</Link>
+                    <Link onClick={() => setMobileMenuOpen(false)} className={`text-lg font-bold mb-4 ${isActive('/pages/project') ? "text-white" : "text-gray-400 hover:text-white"}`} href="/pages/project" aria-current={isActive('/pages/project') ? "page" : undefined}>Project</Link>
                     <Link onClick={() => setMobileMenuOpen(false)} className={`text-lg font-bold mb-4 ${isActive('/pages/gear') ? "text-white" : "text-gray-400 hover:text-white"}`} href="/pages/gear" aria-current={isActive('/pages/gear') ? "page" : undefined}>Gear</Link>
                     <Link onClick={() => setMobileMenuOpen(false)} className={`text-lg font-bold mb-2 ${isActive('/pages/contact') ? "text-white" : "text-gray-400 hover:text-white"}`} href="/pages/contact" aria-current={isActive('/pages/contact') ? "page" : undefined}>Contact</Link>
                   </nav>

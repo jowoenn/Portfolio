@@ -11,7 +11,7 @@ const fontInter = Inter({
 
 export const metadata: Metadata = {
   title: "jowoen",
-  description: "Portfolio Website"
+  description: "..."
 };
 
 export default function RootLayout({children,}: Readonly<{
