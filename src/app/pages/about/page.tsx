@@ -18,7 +18,7 @@ export default function Page() {
     },
     {
       title: "Universitas Bina Nusantara",
-      subtitle: "Mobile Application and Technology",
+      subtitle: "Mobile App and Technology",
       date: "2021 - 2025",
       description: "graduated and free",
       color: "bg-yellow-500",
@@ -69,11 +69,11 @@ export default function Page() {
       <div className="mb-5 w-full flex justify-center">
         <ImageCarousel
           images={[
-            { src: "/drawable/jowoen.jpg", alt: "" },
-            { src: "/drawable/lari.jpeg", alt: "" },
-            { src: "/drawable/sybau.png", alt: "" },
-            { src: "/drawable/olisykes.jpeg", alt: "" },
-            { src: "/drawable/botak.jpeg", alt: "" },
+            { src: "/drawable/jowoen.jpg", alt: "Yogyakarta -2023" },
+            { src: "/drawable/lari.jpeg", alt: "Binusian Fun Run -2025" },
+            { src: "/drawable/sybau.png", alt: "\"sybau\" -2025" },
+            { src: "/drawable/olisykes.jpeg", alt: "NeXFesT -2024" },
+            { src: "/drawable/botak.jpeg", alt: "Bedono -2020" },
           ]}
           width={300}
           height={400}

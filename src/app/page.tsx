@@ -13,7 +13,7 @@ export default function Page() {
     <div className="flex flex-col w-full mx-auto px-2">
       <div className="w-full">
         <h1 className="text-2xl md:text-2xl font-bold text-left w-full">hello, Jonathan here.</h1>
-        <h2 className="">welcome to my personal portfolio, please enjoy your stay.</h2>
+        <h2 className="">welcome to my personal portfolio, please enjoy your stay</h2>
       </div>
       <div className="mt-5 mb-5 w-full flex justify-center">
         <Image src="/drawable/displayHero.gif" alt="source 86" className="w-full rounded-xl" width={1000} height={1000} unoptimized/>

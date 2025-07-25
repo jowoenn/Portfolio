@@ -78,7 +78,7 @@ export default function Page() {
     <div className="flex flex-col w-full max-w-xl mx-auto px-2">
       <div>
         <h1 className="text-2xl font-bold">Gear</h1>
-        <h2>what i use.</h2>
+        <h2>what i use</h2>
       </div>
 
       <div className="mt-8">

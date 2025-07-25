@@ -109,7 +109,28 @@ export default function ImageCarousel({
                 style={{ objectFit: "cover", width: "100%", height: "100%" }}
                 draggable={false}
               />
-            </div>
+              </div>
+          );
+        })}
+        {Array.from({ length: visibleCount }).map((_, i) => {
+          const offset = i - half;
+          const idx = getIndex(offset);
+          return (
+            <div
+              key={`desc-${idx}`}
+              className="absolute text-white text-center text-sm font-extralight"
+              style={{
+                bottom: "15px",
+                left: "50%",
+                transform: `translateX(-50%) scale(${offset === 0 ? 1 : 0.85})`,
+                zIndex: offset === 0 ? 2 : 1,
+                opacity: offset === 0 ? 1 : 0,
+                transition: "transform 0.5s, opacity 0.5s",
+                pointerEvents: "none", 
+              }}
+            >
+                {images[idx].alt}
+              </div>
           );
         })}
         {/* Navigation buttons (only show on md and up) */}
