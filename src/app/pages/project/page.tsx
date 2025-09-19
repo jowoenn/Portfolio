@@ -3,7 +3,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const listProject = [
   {
-    name: "Snap",
+    name: "Snap *On Progress*",
     image: "/drawable/lenovo.png",
     image2: "/drawable/xiaomig24i.png",
     description: "A social photo sharing mobile application. Basically a BeReal duplicate",
@@ -18,8 +18,8 @@ const listProject = [
   },
   {
     name: "Foot Lockre",
-    image: "/drawable/lenovo.png",
-    image2: "/drawable/xiaomig24i.png",
+    image: "/project/footlockre_1.png",
+    image2: "/project/footlockre_2.png",
     description: "Another mandatory college project. A combination of multiple online shopping websites into one",
     domain: "https://github.com/jowoenn/Foot-Lockre"
   },
@@ -60,8 +60,8 @@ export default function Page() {
           {listProject.map((item, index) => (
             <div key={index} className="mt-10 w-full flex flex-col items-start space-y-4">
               <div className="flex space-x-4">
-                <Image src={item.image} alt={item.name} width={200} height={400} className="rounded-lg" />
-                <Image src={item.image2} alt={item.name} width={200} height={400} className="rounded-lg" />
+                <Image src={item.image} alt={item.name} width={300} height={400} className="rounded-lg" />
+                <Image src={item.image2} alt={item.name} width={300} height={400} className="rounded-lg" />
               </div>
               <div>
                 <h3 className="font-bold text-m">{item.name}</h3>

@@ -48,6 +48,7 @@ export default function Page() {
           <div>
             <div className="font-bold text-white">CV</div>
             <div className="text-gray-400 text-sm">Download</div>
+            <div className="text-gray-400 text-sm">last updated: May 2025</div>
           </div>
         </a>
         <a href="/files/PORTFOLIO.pdf" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 border border-gray-700 rounded-xl p-4 bg-[#181818] hover:bg-[#232323] transition shadow group">
@@ -55,6 +56,7 @@ export default function Page() {
           <div>
             <div className="font-bold text-white">Portfolio</div>
             <div className="text-gray-400 text-sm">Download</div>
+            <div className="text-gray-400 text-sm">last updated: May 2025</div>
           </div>
         </a>
       </div>

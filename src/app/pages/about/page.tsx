@@ -70,9 +70,9 @@ export default function Page() {
         <ImageCarousel
           images={[
             { src: "/drawable/jowoen.jpg", alt: "Yogyakarta -2023" },
-            { src: "/drawable/lari.jpeg", alt: "Binusian Fun Run -2025" },
-            { src: "/drawable/sybau.png", alt: "\"sybau\" -2025" },
-            { src: "/drawable/olisykes.jpeg", alt: "NeXFesT -2024" },
+            { src: "/drawable/lari.jpeg", alt: "Tangerang -2025" },
+            { src: "/drawable/andong.jpg", alt: "Magelang -2020" },
+            { src: "/drawable/olisykes.jpeg", alt: "Jakarta -2024" },
             { src: "/drawable/botak.jpeg", alt: "Bedono -2020" },
           ]}
           width={300}
