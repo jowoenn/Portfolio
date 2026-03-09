@@ -10,13 +10,6 @@ const listProject = [
     domain: "https://github.com/jowoenn/Snap"
   },
   {
-    name: "BlueJack Pharmacy",
-    image: "/drawable/lenovo.png",
-    image2: "/drawable/xiaomig24i.png",
-    description: "Mandatory college project. A simple list view mobile application with local database",
-    domain: "https://github.com/jowoenn/Bluejack-Pharmacy"
-  },
-  {
     name: "Foot Lockre",
     image: "/project/footlockre_1.png",
     image2: "/project/footlockre_2.png",
@@ -24,23 +17,22 @@ const listProject = [
     domain: "https://github.com/jowoenn/Foot-Lockre"
   },
   {
+    name: "BlueJack Pharmacy",
+    description: "Mandatory college project. A simple list view mobile application with local database",
+    domain: "https://github.com/jowoenn/Bluejack-Pharmacy"
+  },
+  {
     name: "Manchester City Mobile Fan App",
-    image: "/drawable/lenovo.png",
-    image2: "/drawable/xiaomig24i.png",
     description: "Just a big fan of the club. Application used to show available bookings and tickets, latest news and squad information (not official and all local)",
     domain: "https://github.com/jowoenn/Manchester-City"
   },
   {
     name: "Anpro",
-    image: "/drawable/lenovo.png",
-    image2: "/drawable/xiaomig24i.png",
     description: "Simple landing page for my parents company",
     domain: "https://github.com/jowoenn/Anpro"
-  },
+  },  
   {
     name: "Liberio",
-    image: "/drawable/lenovo.png",
-    image2: "/drawable/xiaomig24i.png",
     description: "An online library, capable of searching most books",
     domain: "https://github.com/jowoenn/Liberio"
   }
@@ -60,8 +52,24 @@ export default function Page() {
           {listProject.map((item, index) => (
             <div key={index} className="mt-10 w-full flex flex-col items-start space-y-4">
               <div className="flex space-x-4">
-                <Image src={item.image} alt={item.name} width={300} height={400} className="rounded-lg" />
-                <Image src={item.image2} alt={item.name} width={300} height={400} className="rounded-lg" />
+              {item.image && (
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  width={250}
+                  height={350}
+                  className="rounded-lg"
+                />
+              )}
+              {item.image2 && (
+                <Image
+                  src={item.image2}
+                  alt={item.name}
+                  width={250}
+                  height={350}
+                  className="rounded-lg"
+                />
+              )}
               </div>
               <div>
                 <h3 className="font-bold text-m">{item.name}</h3>
@@ -70,7 +78,8 @@ export default function Page() {
                   <a href={item.domain} target="_blank" rel="noopener noreferrer" className="text-m text-white">{item.domain}</a>           
                   <FiArrowUpRight />
                 </div>
-              </div>    
+              </div>
+              <hr className="w-full border-gray-700"/>    
             </div>
           ))}
         </div>

@@ -5,29 +5,29 @@ export default function Page() {
     {
       title: "PT Adicipta Teknologi Inovasi",
       subtitle: "Mobile Developer",
-      date: "2025 - Now",
-      description: "full time worker",
+      date: "2025 - Present",
+      description: "Worked on multiple projects, handles various applications for over 20+ clients",
       color: "bg-blue-500",
     },
     {
       title: "PT Adicipta Teknologi Inovasi",
       subtitle: "Support Developer Intern",
       date: "2024 - 2025",
-      description: "first internship",
+      description: "Top internee of my department",
       color: "bg-green-500",
     },
     {
       title: "Universitas Bina Nusantara",
       subtitle: "Mobile App and Technology",
       date: "2021 - 2025",
-      description: "graduated and free",
+      description: "Part of the HIMTI community",
       color: "bg-yellow-500",
     },
     {
       title: "SMA Sedes Sapientiae Bedono",
       subtitle: "Science Major",
       date: "2018 - 2021",
-      description: "perantauan era",
+      description: "A member of an orchestra and a dormitory committee",
       color: "bg-red-500",
     },
   ];
@@ -40,21 +40,21 @@ export default function Page() {
       color: "text-blue-500",
     },
     {
-      title: "Crypto Enthusiast",
+      title: "Investing",
       description: "doing whatever chatgpt says",
       stats: "-$10,000 profit",
       color: "text-green-500",
     },
     {
       title: "Games",
-      description: "hardstuck diamond on valorant",
+      description: "gacha addict",
       stats: "1000 hours",
       color: "text-yellow-500",
     },
     {
-      title: "Running",
+      title: "Gym",
       description: "just started yesterday",
-      stats: "5km",
+      stats: "1xfailure",
       color: "text-red-500",
     }
   ];
@@ -96,7 +96,7 @@ export default function Page() {
                       <li>{item.description}</li>
                     </ul>
                   </div>
-                  <p className="text-sm text-gray-500">{item.date}</p>
+                  <p className="flex-shrink-0 text-sm text-gray-500">{item.date}</p>
                 </div>
               </div>
             ))}

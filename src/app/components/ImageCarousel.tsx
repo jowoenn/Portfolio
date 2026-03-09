@@ -133,7 +133,6 @@ export default function ImageCarousel({
               </div>
           );
         })}
-        {/* Navigation buttons (only show on md and up) */}
         <button
           onClick={() => setCurrent((c) => (c - 1 + images.length) % images.length)}
           className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/70 px-3 py-2 rounded-full z-10 hidden md:block"
@@ -147,7 +146,6 @@ export default function ImageCarousel({
           &#8594;
         </button>
       </div>
-      {/* Dots */}
       <div className="flex mt-4 space-x-2">
         {images.map((_, idx) => (
           <button

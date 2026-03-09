@@ -5,6 +5,16 @@
   --font-primary: #ffffff;
 }
 
+.light {
+  --background: #ffffff;
+  --font-primary: #171717;
+}
+
+.dark {
+  --background: #171717;
+  --font-primary: #ffffff;
+}
+
 @theme inline {
   --color-background: var(--background);
 }

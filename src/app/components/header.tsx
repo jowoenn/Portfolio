@@ -5,14 +5,16 @@ import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
+import { useTheme } from '../ThemeContext';
 
 export default function Header() {
     const router = useRouter();
     const pathname = usePathname();
     const [indicatorStyle, setIndicatorStyle] = useState({ left: '0px', width: '0px' });
-    const [isDarkMode, setIsDarkMode] = useState(false);
     const [isRotating, setIsRotating] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    const {darkMode, setDarkMode} = useTheme();
 
     const isActive = (path: string) => {
         if (!pathname) return false;
@@ -36,9 +38,9 @@ export default function Header() {
     const handleThemeToggle = () => {
         setIsRotating(true);
         setTimeout(() => {
-            setIsDarkMode(!isDarkMode);
+            setDarkMode(!darkMode);
             setIsRotating(false);
-        }, 300); // Half of the rotation duration
+        }, 300); 
     };
 
     return (
@@ -107,7 +109,7 @@ export default function Header() {
                     onClick={handleThemeToggle}
                 >
                     <img 
-                        src={isDarkMode ? "/drawable/modeToggleDark.png" : "/drawable/modeToggleLight.png"} 
+                        src={darkMode ? "/drawable/modeToggleDark.png" : "/drawable/modeToggleLight.png"} 
                         alt="theme toggle" 
                         width={28} 
                         height={28}
