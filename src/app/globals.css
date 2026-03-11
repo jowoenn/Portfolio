@@ -46,6 +46,10 @@ body {
   color: var(--font-primary);
 }
 
+.carousel-caption-theme {
+  color: var(--font-primary);
+}
+
 .logo {
   transition: transform 0.4s ease-in-out;
 }

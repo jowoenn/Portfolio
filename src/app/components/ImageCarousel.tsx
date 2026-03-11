@@ -7,6 +7,7 @@ interface ImageCarouselProps {
   width?: number;
   height?: number;
   visibleCount?: number;
+  captionClassName?: string;
 }
 
 export default function ImageCarousel({
@@ -14,6 +15,7 @@ export default function ImageCarousel({
   width = 300,
   height = 400,
   visibleCount = 3,
+  captionClassName = "text-white",
 }: ImageCarouselProps) {
   const [current, setCurrent] = useState(0);
   const [dragStartX, setDragStartX] = useState<number | null>(null);
@@ -118,7 +120,7 @@ export default function ImageCarousel({
           return (
             <div
               key={`desc-${idx}`}
-              className="absolute text-white text-center text-sm font-extralight"
+              className={`absolute ${captionClassName} text-center text-sm font-extralight`}
               style={{
                 bottom: "15px",
                 left: "50%",

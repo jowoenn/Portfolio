@@ -4,6 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 const listProject = [
   {
     name: "Snap *On Progress*",
+    daterange: "2024 - Present",
     image: "/drawable/lenovo.png",
     image2: "/drawable/xiaomig24i.png",
     description: "A social photo sharing mobile application. Basically a BeReal duplicate",
@@ -11,31 +12,36 @@ const listProject = [
   },
   {
     name: "Foot Lockre",
+    daterange: "2023",
     image: "/project/footlockre_1.png",
     image2: "/project/footlockre_2.png",
     description: "Another mandatory college project. A combination of multiple online shopping websites into one",
     domain: "https://github.com/jowoenn/Foot-Lockre"
   },
   {
-    name: "BlueJack Pharmacy",
-    description: "Mandatory college project. A simple list view mobile application with local database",
-    domain: "https://github.com/jowoenn/Bluejack-Pharmacy"
-  },
-  {
     name: "Manchester City Mobile Fan App",
+    daterange: "2023",
     description: "Just a big fan of the club. Application used to show available bookings and tickets, latest news and squad information (not official and all local)",
     domain: "https://github.com/jowoenn/Manchester-City"
   },
   {
     name: "Anpro",
+    daterange: "2023",
     description: "Simple landing page for my parents company",
     domain: "https://github.com/jowoenn/Anpro"
   },  
   {
     name: "Liberio",
+    daterange: "2023",
     description: "An online library, capable of searching most books",
     domain: "https://github.com/jowoenn/Liberio"
-  }
+  },
+  {
+    name: "BlueJack Pharmacy",
+    daterange: "2022",
+    description: "Mandatory college project. A simple list view mobile application with local database",
+    domain: "https://github.com/jowoenn/Bluejack-Pharmacy"
+  },
 ]
 
 
@@ -71,11 +77,18 @@ export default function Page() {
                 />
               )}
               </div>
-              <div>
-                <h3 className="font-bold text-m">{item.name}</h3>
+              <div className="w-full">
+                <div className="flex justify-between items-start w-full">
+                  <h3 className="font-bold text-m">{item.name}</h3>
+                  {item.daterange && (
+                    <span className="text-sm text-gray-500 text-right ml-4 whitespace-nowrap">
+                      {item.daterange}
+                    </span>
+                  )}
+                </div>
                 <p className="text-m text-gray-400">{item.description}</p>
                 <div className="mt-4 flex flex-row">
-                  <a href={item.domain} target="_blank" rel="noopener noreferrer" className="text-m text-white">{item.domain}</a>           
+                  <a href={item.domain} target="_blank" rel="noopener noreferrer" className="text-m">{item.domain}</a>           
                   <FiArrowUpRight />
                 </div>
               </div>

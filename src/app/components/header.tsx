@@ -44,7 +44,7 @@ export default function Header() {
     };
 
     return (
-        <header>
+        <header className="bg-[#171717]">
             <div className="flex flex-row md:space-x-30 space-x-6 py-6 md:py-10 justify-between md:justify-center items-center px-4 md:px-0">
                 <h1 className="logo cursor-pointer" onClick={() => router.push("/")}>
                     <img src="/drawable/triangleLogo.png" alt="logo" className="w-10 h-10" />

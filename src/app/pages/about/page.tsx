@@ -78,6 +78,7 @@ export default function Page() {
           width={300}
           height={400}
           visibleCount={3}
+          captionClassName="carousel-caption-theme"
         />
       </div>
 
