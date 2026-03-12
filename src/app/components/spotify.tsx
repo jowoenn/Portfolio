@@ -69,7 +69,7 @@ export default function Spotify() {
 
   if (!tracks.length) {
     return (
-      <div className="bg-[--background] rounded-xl text-white w-full max-w-2xl flex flex-col gap-6 shadow-lg">
+      <div className="bg-[--background] rounded-xl text-[var(--font-primary)] w-full max-w-2xl flex flex-col gap-6 shadow-lg">
       </div>
     );
   }
@@ -77,7 +77,7 @@ export default function Spotify() {
   const [latest, ...rest] = tracks;
 
   return (
-    <div className="rounded-xl text-white w-full flex flex-col md:flex-row gap-4 md:gap-6 shadow-lg transition-colors duration-500 px-2 mx-auto">
+    <div className="rounded-xl text-[var(--font-primary)] w-full flex flex-col md:flex-row gap-4 md:gap-6 shadow-lg transition-colors duration-500 px-2 mx-auto">
       <div
         className="flex-1 flex flex-col items-center justify-center rounded-lg p-4 min-w-0"
         style={{ backgroundColor: bgColor[latest.id] || "bg -[--background]" }}
@@ -89,10 +89,12 @@ export default function Spotify() {
           crossOrigin="anonymous"
           onLoad={e => handleBackgroundImage(latest.id, e.currentTarget)}
         />
-        <a href={latest.external_urls.spotify} target="_blank" rel="noopener noreferrer" className="text-lg md:text-2xl font-bold hover:underline text-center break-words">
+        <a href={latest.external_urls.spotify} target="_blank" rel="noopener noreferrer" className="text-lg md:text-2xl font-bold hover:underline text-center break-words text-[var(--font-primary)]">
           {latest.name}
         </a>
-        <div className="text-base md:text-lg text-center break-words">{latest.artists.map(a => a.name).join(", ")}</div>
+        <div className="text-base md:text-lg text-center break-words text-[var(--font-primary)]">
+          {latest.artists.map(a => a.name).join(", ")}
+        </div>
         <div className="text-sm text-gray-200 text-center break-words">{latest.album.name}</div>
       </div>
       <div className="flex flex-col flex-[1.2] gap-2 md:gap-4 w-full min-w-0">
@@ -110,10 +112,12 @@ export default function Spotify() {
               onLoad={e => handleBackgroundImage(track.id, e.currentTarget)}
             />
             <div className="flex-1 min-w-0">
-              <a href={track.external_urls.spotify} target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline text-sm md:text-base break-words">
+              <a href={track.external_urls.spotify} target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline text-sm md:text-base break-words text-[var(--font-primary)]">
                 {track.name}
               </a>
-              <div className="text-xs md:text-sm text-gray-400 break-words">{track.artists.map(a => a.name).join(", ")}</div>
+              <div className="text-xs md:text-sm break-words text-[var(--font-primary)]">
+                {track.artists.map(a => a.name).join(", ")}
+              </div>
               <div className="text-xs text-gray-500 break-words">{track.album.name}</div>
             </div>
           </div>

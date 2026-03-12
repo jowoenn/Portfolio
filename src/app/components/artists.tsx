@@ -56,7 +56,7 @@ export default function Artists() {
 
     if (!artists.length) {
     return (
-        <div className="bg-[--background] rounded-xl text-white w-full max-w-2xl flex flex-row gap-6 shadow-lg">
+        <div className="bg-[--background] rounded-xl text-[var(--font-primary)] w-full max-w-2xl flex flex-row gap-6 shadow-lg">
         </div>
     );
     }
@@ -64,7 +64,7 @@ export default function Artists() {
     const [featured, ...rest] = artists;
 
     return (
-        <div className="rounded-xl text-white w-full flex flex-col md:flex-row gap-4 md:gap-6 shadow-lg transition-colors duration-500 px-2 mx-auto">
+        <div className="rounded-xl text-[var(--font-primary)] w-full flex flex-col md:flex-row gap-4 md:gap-6 shadow-lg transition-colors duration-500 px-2 mx-auto">
         <div
         className="flex-1 flex flex-col items-center justify-center rounded-lg p-4"
         style={{ backgroundColor: bgColor[featured.id] || "bg -[--background]" }}
@@ -80,7 +80,7 @@ export default function Artists() {
             href={featured.external_urls.spotify}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-2xl font-bold hover:underline"
+            className="text-2xl font-bold hover:underline text-[var(--font-primary)]"
             >
             {featured.name}
             </a>
@@ -107,7 +107,7 @@ export default function Artists() {
                 href={artist.external_urls.spotify}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold hover:underline"
+                className="font-semibold hover:underline text-[var(--font-primary)]"
               >
                 {artist.name}
               </a>

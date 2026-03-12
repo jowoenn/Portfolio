@@ -5,8 +5,6 @@ const listProject = [
   {
     name: "Snap *On Progress*",
     daterange: "2024 - Present",
-    image: "/drawable/lenovo.png",
-    image2: "/drawable/xiaomig24i.png",
     description: "A social photo sharing mobile application. Basically a BeReal duplicate",
     domain: "https://github.com/jowoenn/Snap"
   },
