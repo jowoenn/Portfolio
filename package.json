@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/oxide": "^4.2.1",
     "color-thief-browser": "^2.0.2",
     "lightningcss": "^1.32.0",
     "next": "^16.0.7",
