@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "color-thief-browser": "^2.0.2",
+    "lightningcss": "^1.32.0",
     "next": "^16.0.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
